@@ -3,6 +3,11 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   devIndicators: false, // Remove widget de desenvolvimento Next.js
   
+  // Configuração de porta customizada
+  serverRuntimeConfig: {
+    port: 3001,
+  },
+  
   // Ignorar erros durante build (compatibilidade Vercel)
   eslint: {
     ignoreDuringBuilds: true,
